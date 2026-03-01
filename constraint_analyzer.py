@@ -97,8 +97,8 @@ def build_pivot(option, constraints, options, option_labels):
 
 
 def print_usage():
-    print("Usage: python script.py <ppd_file> <target_option>")
-    print("Example: python script.py printer.ppd Duplex")
+    print("Usage: python constraint_analyzer.py <ppd_file> <target_option>")
+    print("Example: python constraint_analyzer.py printer.ppd Duplex")
     sys.exit(1)
 
 
