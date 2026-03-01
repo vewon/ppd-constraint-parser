@@ -1,4 +1,4 @@
-# README: PPD Constraint Parser
+# PPD Constraint Parser
 
 ## Overview
 This Python script parses **PostScript Printer Description (PPD)** files to extract option constraints and creates a pivot table showing the relationships between the printer options. It helps visualize which combinations of options are restricted by the printer driver.
@@ -9,13 +9,9 @@ The script does the following:
 - Creates a pivot table for a chosen option, showing how it interact with other related options
 - Outputs results to the console, CSV, and Excel formats.
 
----
-
 ## Features
-- **PPD Parsing**
-- **Pivot Table Generation**
-
----
+- **PPD Parsing**: Extracts the constraints, options, and labels
+- **Pivot Table Generation**: Display relationships between a target option and related option
 
 ## Requirements
 - `Python`: 3.11+
@@ -25,13 +21,9 @@ The script does the following:
 To install the dependencies, use the following command:
 `pip install pandas`
 
----
-
 ## Usage
 Run the script from the command line using the following:
-`python script.py <ppd_file> <target_option>`
-
----
+`python constraint_analyzer.py <ppd_file> <target_option>`
 
 ## Output
 
@@ -49,5 +41,3 @@ The pivot table includes the following:
 | MediaType     | Cardstock    |      |                |              |
 | MediaType     | Glossy       |      | X              | X            |
 | MediaType     | Labels       |      | X              | X            |
-
-
